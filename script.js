@@ -9,15 +9,12 @@ var totalBilled = '';
 UserData.on("value", function(snapshot) {
 
 
-
-
-
     console.log(snapshot);
 
-    $("#namedisplay").html(snapshot.val().name);
-    $("#emaildisplay").html(snapshot.val().email);
-    $("#agedisplay").html(snapshot.val().age);
-    $("#commentdisplay").html(snapshot.val().comment);
+  //  $("#namedisplay").html(snapshot.val().name);
+  //  $("#emaildisplay").html(snapshot.val().email);
+   // $("#agedisplay").html(snapshot.val().age);
+   // $("#commentdisplay").html(snapshot.val().comment);
 
 
 
@@ -29,15 +26,15 @@ UserData.on("value", function(snapshot) {
 
 
 // Get inputs
-name = $('#nameinput').val().trim();
-age = $('#ageinput').val().trim();
-phone = $('#phoneinput').val().trim();
+//name = $('#nameinput').val().trim();
+//age = $('#ageinput').val().trim();
+//phone = $('#phoneinput').val().trim();
 
 // Change what is saved in firebase
 dataRef.set({
-    employeeName: 'Joe';
-    Role: 'Cheer leader';
-    monthsWorked: 1;
-    monthyRate: = 12;
-    totalBilled: = '13';
+    employeeName: 'Joe',
+    Role: 'Cheer leader',
+    monthsWorked: 1,
+    monthyRate: 12,
+    totalBilled:  '13'
 });
